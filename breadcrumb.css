@@ -1,0 +1,18 @@
+.breadcrumb:li {
+  display: inline
+}
+.breadcrumb li+li::before {
+  content: " ";
+}
+li:hover {
+  cursor: pointer;
+}
+.breadcrumb li.attribute a {
+  color: green;
+}
+.breadcrumb li.attribute::before {
+  content: "x";
+  color: red;
+  font-size: 12px;
+  vertical-align: super;
+}
